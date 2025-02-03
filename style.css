@@ -120,7 +120,6 @@ body {
   display: flex;
   gap: 32px;
   h3 {
-    /* max-width: 179px; */
     font-size: 1.96em;
     font-weight: 500;
     line-height: 28px;
@@ -186,9 +185,9 @@ body {
   }
   img {
     display: inline-block;
-    /* min-width: 357px; */
     min-height: 50%;
-    width: 100%;
+    width: 357px;
+    height: 318px;
     object-fit: cover;
     object-position: top 0 left 0;
   }
@@ -204,7 +203,7 @@ body {
   gap: 12px;
   img {
     display: inline-block;
-    max-width: 195px;
+    max-width: 215px;
   }
   h3 {
     font-size: 40px;
@@ -309,6 +308,10 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 32px;
+    min-height: auto;
+    margin-inline: 40px;
+    margin-block: 52px;
+    padding: 0;
   }
   .social {
     height: 324px;
@@ -332,6 +335,13 @@ body {
     height: 497px;
     align-items: center;
     padding-inline-end: 32px;
+    padding-block: 32px;
+    h3 {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: -1.68px;
+    }
     img {
       height: 318px;
       width: 357px;
@@ -339,7 +349,7 @@ body {
       object-position: center center;
     }
     p {
-      width: 359px;
+      max-width: 359px;
       text-align: center;
       margin-inline: auto;
     }
@@ -362,9 +372,21 @@ body {
       height: 355px;
     }
   }
+  .create,
+  .write {
+    h3 {
+      font-size: 36px;
+      line-height: 30px;
+      letter-spacing: -2.16px;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    margin-inline: 16px;
+    margin-block: 32px;
+  }
   .social {
     justify-content: space-between;
     height: auto;
@@ -374,9 +396,7 @@ body {
       letter-spacing: -1.84px;
     }
   }
-  .grow {
-    flex-direction: column;
-  }
+
   .manage-maitain {
     flex-direction: column;
     height: auto;
@@ -402,6 +422,31 @@ body {
       left: 24px;
     }
   }
+  .schedule {
+    padding-inline: 17px;
+    height: auto;
+    h3 {
+      text-align: center;
+      font-size: 25px;
+      line-height: 24px;
+      letter-spacing: -1.56px;
+    }
+    img {
+      min-height: auto;
+      height: auto;
+    }
+  }
+  .grow {
+    flex-direction: column;
+    padding-inline: 43px;
+    h3 {
+      font-size: 32px;
+      line-height: 28px;
+      letter-spacing: -1.92px;
+      width: auto;
+      text-align: center;
+    }
+  }
   .grd {
     flex-direction: column;
 
@@ -412,6 +457,14 @@ body {
     .write {
       width: 100%;
       height: auto;
+    }
+  }
+  .create,
+  .write {
+    h3 {
+      font-size: 28px;
+      line-height: 28px;
+      letter-spacing: -1.92px;
     }
   }
 }
